@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Privacy Policy - Competibot</title>
-    <link rel="stylesheet" href="css/main.css"> <!-- Adjust if your CSS path is different -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>competibot</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        .centered-text {
+            text-align: center;
+        }
+        .centered-article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
-<body>
 
+<body>
     <header id="banner" class="body">
-        <h1></h1>
-        <a href="https://slack.com/oauth/v2/authorize?client_id=5802671050437.5810384501891&scope=chat:write,commands,incoming-webhook&user_scope=">
-            <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
-        </a>
-        <h1></h1>
-    </header><!-- /#banner -->
+        <h1>
+            <span style="display: inline-block; vertical-align: middle;">
+                <img src="icons/competbot-logo.png" alt="logo" style="height:1em;">
+            </span>
+            <span style="display: inline-block; vertical-align: middle;">
+                <a href="https://pauroger.github.io/competibot-web/" target="_blank">competibot</a>
+            </span>
+        </h1>
+        <link rel="stylesheet" href="css/main.css" />
+    </header>
 
     <main id="content" class="body">
         <article>
@@ -32,7 +47,7 @@
     
             <h3>Log Data</h3>
             <p>
-                We only store data necessary for the functionality of the competibot Slack App. This data includes the results of matches, pseudonims used for the command arguments and relevant identifiers for operation within Slack.
+                We only store data necessary for the functionality of the competibot app for Slack. This data includes the results of matches, pseudonims used for the command arguments and relevant identifiers for operation within Slack.
             </p>
     
             <h3>Security</h3>
@@ -48,6 +63,34 @@
                 We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.
             </p>
     
+        </article>
+    </main>
+
+    <main id="content" class="body">
+        <article>
+            <header>
+                <h2>Data Deletion Request</h2>
+            </header>
+            <p>
+                To initiate the process of data deletion, please submit your request through our dedicated <a href="https://pauroger.github.io/competibot-web/" target="_blank">Google Form</a> located on the main page. It is essential to specify the name of your Slack workspace in your submission for accurate processing.
+            </p> 
+            <p>
+                Alternatively, if your intention is solely to delete game records in a specific channel, execute the command <code>/delete_lastest_game</code> as required.
+            </p> 
+        </article>
+    </main>
+
+    <main id="content" class="body">
+        <article>
+            <header>
+                <h2>Data Retention Policy</h2>
+            </header>
+            <p>
+                We store match results, encompassing player aliases and the outcomes of matches, on an indefinite basis. This practice is essential for ensuring a comprehensive historical record and accurate Skill Level reporting.
+            </p> 
+            <p>
+                We fully respect your right to privacy and data control. Should you wish to have your data removed from our systems, see 'Data Deletion Request' above.
+            </p> 
         </article>
     </main>
 

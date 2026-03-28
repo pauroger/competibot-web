@@ -3,120 +3,122 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>competibot</title>
+    <title>competibot - Competitive leaderboards for Slack & Discord</title>
+    <link rel="icon" type="image/png" href="icons/logo.png" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body id="index" class="home">
 
+    <!-- Banner -->
+    <div class="banner-wrap">
+        <img src="icons/banner.png" alt="" class="banner-img" />
+    </div>
+
     <header id="banner" class="body">
         <h1>
-            <!-- Use inline-block and vertical-align for alignment -->
             <span style="display: inline-block; vertical-align: middle;">
-                <img src="icons/competbot-logo.png" alt="logo" style="height:1em;">
+                <img src="icons/logo.png" alt="competibot logo" style="height:1.2em;">
             </span>
             <span style="display: inline-block; vertical-align: middle;">
                 <a href="/">competibot</a>
             </span>
         </h1>
-        <a href="https://slack.com/oauth/v2/authorize?client_id=5802671050437.5810384501891&scope=chat:write,commands,incoming-webhook&user_scope=">
-            <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
-        </a>
-        <nav><ul></ul></nav>
-    </header><!-- /#banner -->
-    
-    <section id="content" class="body">
-        <h2>Meet competibot 🏆</h2>
-        <p>The ultimate Slack and Discord companion for injecting a dose of adrenaline into your community! With competibot, your office or server becomes an arena of fun, friendly competition.</p>
-        <p>Powered by smart matchmaking and skill tracking, competibot isn’t just a bot—it’s a game master. From head-to-head battles 🥊 to chaotic free-for-alls 🎊, it fuels engagement across teams and communities, whether you're in-office, hybrid, or fully remote.</p>
-        
-        <h3>🧲 Get Your Team Hooked</h3>
-        <p>🏓 Back in the Office? Fire up a leaderboard for ping pong, trivia, or foosball.</p>
-        <p>🌍 Fully Remote? Rally teammates around virtual game nights, talent shows, or remote hackathons.</p>
-        <p>🎮 Running a gaming community? Spin up leagues, ladders, scrims, and tournaments right in your Discord or Slack channels.</p>
-        <p>Competibot bridges the gap and makes every interaction a chance to win — on Slack and Discord.</p>
+        <p class="tagline">Competitive leaderboards for Slack & Discord</p>
+        <div class="install-buttons">
+            <a href="https://slack.com/oauth/v2/authorize?client_id=5802671050437.5810384501891&scope=chat:write,commands,incoming-webhook&user_scope=" class="install-btn slack-btn">
+                <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+            </a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1370495987717767309&scope=bot%20applications.commands&permissions=2147485696" class="install-btn discord-btn">
+                <svg width="24" height="24" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+                    <path d="M60.1 4.9A58.5 58.5 0 0045.4.2a.2.2 0 00-.2.1 40.8 40.8 0 00-1.8 3.7 54 54 0 00-16.2 0A26.5 26.5 0 0025.4.3a.2.2 0 00-.2-.1A58.4 58.4 0 0010.5 4.9a.2.2 0 00-.1.1C1.5 18.7-.9 32.2.3 45.5v.1a58.8 58.8 0 0017.7 9a.2.2 0 00.3-.1 42 42 0 003.6-5.9.2.2 0 00-.1-.3 38.8 38.8 0 01-5.5-2.6.2.2 0 01 0-.4l1.1-.9a.2.2 0 01.2 0 42 42 0 0035.6 0 .2.2 0 01.2 0l1.1.9a.2.2 0 010 .4 36.4 36.4 0 01-5.5 2.6.2.2 0 00-.1.3 47.2 47.2 0 003.6 5.9.2.2 0 00.3.1A58.6 58.6 0 0070.4 45.6v-.1c1.4-15-2.3-28-9.8-39.6a.2.2 0 00-.1 0zM23.7 37.3c-3.4 0-6.3-3.1-6.3-7s2.8-7 6.3-7 6.4 3.2 6.3 7-2.8 7-6.3 7zm23.2 0c-3.4 0-6.3-3.1-6.3-7s2.8-7 6.3-7 6.4 3.2 6.3 7-2.8 7-6.3 7z" fill="#ffffff"/>
+                </svg>
+                Add to Discord
+            </a>
+        </div>
+    </header>
 
-        <h4>Start the Office Olympics with competibot! 🎉</h4>
+    <!-- Hero -->
+    <section id="content" class="body">
+        <h2>Meet competibot</h2>
+        <p>The ultimate companion for friendly competition on <strong>Slack</strong> and <strong>Discord</strong>. Track results, climb the leaderboard, and settle the debate on who's really the best.</p>
+        <p>Powered by a smart rating algorithm, competibot tracks skill across any activity — from ping pong and FIFA to chess and Mario Kart. If you can compete, competibot can rank it.</p>
     </section>
 
+    <!-- Screenshot -->
+    <section id="content" class="body screenshot-section">
+        <h2>See it in action</h2>
+        <img src="icons/discord-screenshot.png" alt="competibot in Discord showing 1v1 and 2v2 leaderboards" class="screenshot" />
+    </section>
+
+    <!-- Features -->
     <main id="content" class="body">
         <article>
             <section>
-                <h2>What competibot does</h2>
-              
-                <ul>
-                  <li>🎯 <strong>Skill tracking</strong> for any activity</li>
-                  <li>🧩 <strong>Works where you are</strong> – Slack and Discord</li>
-                  <li>🏆 <strong>Unlimited rankings</strong> – one per Slack or Discord channel (and DMs where supported)</li>
-                  <li>⚔️ <strong>Match types include:</strong></li>
-                </ul>
-              
-                <h3>🥇 Head-to-head</h3>
-                <ul>
-                  <li><code>/1v1 winner loser</code> – Classic duel</li>
-                  <li><code>/1v1_draw player player</code> – Call it a draw 🤝</li>
-                </ul>
-              
-                <h3>👫 Team Battles</h3>
-                <ul>
-                  <li><code>/2v2 winner winner loser loser</code> – Doubles match</li>
-                  <li><code>/2v2_draw player_team1 player_team1 player_team2 player_team2</code> – Declare a team draw</li>
-                  <li><code>/3v3 winner winner winner loser loser loser</code> – Triple threat teams</li>
-                  <li><code>/3v3_draw player_team1 player_team1 player_team1 player_team2 player_team2 player_team2</code> – Triple draw 🔁</li>
-                  <li><code>/4v4 winner winner winner winner loser loser loser loser</code> – 8-player team clash</li>
-                  <li><code>/4v4_draw player_team1 player_team1 player_team1 player_team1 player_team2 player_team2 player_team2 player_team2</code> – Draw among giants 💥</li>
-                </ul>
-              
-                <h3>🎉 Free-For-Alls (FFA)</h3>
-                <ul>
-                  <li><code>/ffa_3 first second third</code> – 3-player rumble</li>
-                  <li><code>/ffa_4 first second third fourth</code> – 4-way chaos</li>
-                  <li><code>/ffa_5</code> through <code>/ffa_8</code> – Up to 8 players, ranked from winner to last place!</li>
-                </ul>
-              
-                <h3>🧹 Need a redo?</h3>
-                <p>Use <code>/delete_latest_game</code> to undo the last match instantly.</p>
-              </section>
+                <h2>What you can do</h2>
+
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Head-to-head</h3>
+                        <p><code>/1v1 winner loser</code></p>
+                        <p>Classic duels. Draws supported too.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Team battles</h3>
+                        <p><code>/2v2</code> <code>/3v3</code> <code>/4v4</code></p>
+                        <p>Doubles, triples, or full squad clashes.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Free-for-all</h3>
+                        <p><code>/ffa_3</code> to <code>/ffa_8</code></p>
+                        <p>3 to 8 players, ranked from first to last.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Undo mistakes</h3>
+                        <p><code>/delete_latest_game</code></p>
+                        <p>Logged the wrong result? Undo it instantly.</p>
+                    </div>
+                </div>
+
+                <div class="highlights">
+                    <ul>
+                        <li><strong>Works on Slack & Discord</strong> — use it wherever your team hangs out</li>
+                        <li><strong>Unlimited leaderboards</strong> — one per channel, track as many activities as you want</li>
+                        <li><strong>Smart ratings</strong> — powered by a real skill-tracking algorithm, not just win counts</li>
+                    </ul>
+                </div>
+            </section>
         </article>
     </main>
 
-    <main id="content" class="body">
-        <article>
-            <header>
-                <h2>🎉 Try It Free! 🎉</h2>
-            </header>
-            <p>
-                🚀 First 30 days? Absolutely FREE! Zero cost, all fun! 🆓
-            </p> 
-            <p>
-                📆 After that, join the party for just $39.99 USD/year! 🥳
-            </p> 
-        </article>
-    </main>
-    
-    <!-- Support Section -->
+    <!-- Use cases -->
+    <section id="content" class="body">
+        <h2>Works for every kind of competition</h2>
+        <p><strong>In the office?</strong> Fire up leaderboards for ping pong, foosball, or trivia.</p>
+        <p><strong>Fully remote?</strong> Rally teammates around game nights or hackathons.</p>
+        <p><strong>Gaming community?</strong> Run leagues, ladders, and scrims right in your Discord server.</p>
+    </section>
+
+    <!-- Pricing -->
+    <section id="content" class="body pricing-section">
+        <h2>Pricing</h2>
+        <p class="price-free">Free for 30 days</p>
+        <p class="price-paid">Then <strong>$39.99 USD/year</strong> — that's less than $3.50/month.</p>
+    </section>
+
+    <!-- Support -->
     <section id="support" class="body">
-        <hr style="background-color: white; height: 2px;">
+        <h2 style="text-align: center; color: #333;">Get in touch</h2>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4CenhRuqYvkTCKY1L7ylCSLwRxBapnqOa3O1Vc46jUArg_w/viewform?embedded=true" width="100%" height="650" style="border:0;"></iframe>
-        <br>
     </section>
 
-    <!-- Data Privacy Button at the bottom -->
-    <section id="data-privacy-policy" class="body">
-        <hr style="background-color: white; height: 2px;">
-        <div class="button-container">
-            <a href="https://pauroger.github.io/competibot-web/data-privacy" class="button">Data Privacy Policy</a>
+    <!-- Footer -->
+    <footer class="body">
+        <div class="footer-links">
+            <a href="https://pauroger.github.io/competibot-web/data-privacy">Privacy Policy</a>
+            <span class="sep">|</span>
+            <a href="https://pauroger.github.io/competibot-web/tos">Terms of Service</a>
         </div>
-    </section>
-
-    <section id="data-privacy-policy" class="body">
-        <hr style="background-color: white; height: 2px;">
-        <div class="button-container">
-            <a href="https://pauroger.github.io/competibot-web/tos" class="button">Terms of Service</a>
-        </div>
-    </section>
-
-    <footer>
         <p>&copy; 2025 Competibot. All rights reserved.</p>
     </footer>
 

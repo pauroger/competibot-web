@@ -96,22 +96,6 @@ iframe {
 }
 
 /*
-	Banner Image
-*****************/
-.banner-wrap {
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 0 0 10px 10px;
-}
-
-.banner-img {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
-/*
 	Header
 *****************/
 #banner {

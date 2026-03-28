@@ -5,25 +5,23 @@
 @import url("fonts.css");
 
 /***** Global *****/
-/* Body */
 body {
     background: linear-gradient(135deg, #ffffff 0%, #028EC4 100%);
     font-family: 'Lato', sans-serif;
     color: #000305;
-    font-size: 87.5%; /* Base font size: 14px */
+    font-size: 87.5%;
     line-height: 1.429;
     margin: 0;
     padding: 0;
     text-align: left;
 }
 
-/* Headings */
 h1 {font-size: 2em }
-h2 {font-size: 1.571em} /* 22px */
-h3 {font-size: 1.429em} /* 20px */
-h4 {font-size: 1.286em} /* 18px */
-h5 {font-size: 1.143em} /* 16px */
-h6 {font-size: 1em}    /* 14px */
+h2 {font-size: 1.571em}
+h3 {font-size: 1.429em}
+h4 {font-size: 1.286em}
+h5 {font-size: 1.143em}
+h6 {font-size: 1em}
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
@@ -36,7 +34,6 @@ h3, h4, h5, h6 { margin-top: .8em; }
 
 hr { border: 2px solid #EEEEEE; }
 
-/* Anchors */
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
@@ -55,7 +52,6 @@ h1 a:hover {
     background-color: inherit
 }
 
-/* Paragraphs */
 div.line-block,
 p { margin-top: 1em;
     margin-bottom: 1em;}
@@ -63,7 +59,6 @@ p { margin-top: 1em;
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
 
-/* Lists */
 ul {
 	list-style: outside disc;
 	margin: 0em 0 0 1.5em;
@@ -77,60 +72,13 @@ ol {
 li { margin-top: 0.5em;
      margin-bottom: 1em; }
 
-.post-info {
-    float:right;
-    margin:10px;
-    padding:5px;
-}
-
-.post-info p{
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-.readmore { float: right }
-
-dl {margin: 0 0 1.5em 0;}
-dt {font-weight: bold;}
-dd {margin-left: 1.5em;}
-
 pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
 
-/* Quotes */
 blockquote {
     margin: 20px;
     font-style: italic;
 }
-cite {}
 
-q {}
-
-div.note {
-   float: right;
-   margin: 5px;
-   font-size: 85%;
-   max-width: 300px;
-}
-
-/* Tables */
-table {margin: .5em auto 1.5em auto; width: 98%;}
-
-	/* Thead */
-	thead th {padding: .5em .4em; text-align: left;}
-	thead td {}
-
-	/* Tbody */
-	tbody td {padding: .5em .4em;}
-	tbody th {}
-
-	tbody .alt td {}
-	tbody .alt th {}
-
-	/* Tfoot */
-	tfoot th {}
-	tfoot td {}
-
-/* HTML5 tags */
 header, section, footer,
 aside, nav, article, figure {
 	display: block;
@@ -139,49 +87,28 @@ aside, nav, article, figure {
 /***** Layout *****/
 .body {clear: both; margin: 0 auto; max-width: 800px;}
 img { max-width: 100%; }
-img.right, figure.right, div.figure.align-right {
-    float: right;
-    margin: 0 0 2em 2em;
-}
-img.left, figure.left, div.figure.align-left {
-    float: left;
-    margin: 0 2em 2em 0;
-}
 
-/* .rst support */
-div.figure img, figure img {  /* to fill figure exactly */
-    max-width: 100%;
-}
-div.figure p.caption, figure p.caption { /* margin provided by figure */
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* IFrame */
 iframe {
-    display: block; /* Makes sure the iframe is a block element */
-    max-width: 100%; /* Ensures the iframe is responsive and doesn't overflow its container */
-    border: none; /* Removes the default border around iframes */
-    margin: 20px 0; /* Adds some vertical spacing around the iframe */
-}
-
-.button-container {
-    text-align: center;
-    margin: 20px 0;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px; /* Soft edges */
-}
-
-.button {
-    font-size: 1.5em; /* H2 size approximation */
-    color: black; /* Text color */
-    padding: 10px 20px;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none;
+    display: block;
+    max-width: 100%;
     border: none;
-    transition: color 0.3s ease;
+    margin: 20px 0;
+}
+
+/*
+	Banner Image
+*****************/
+.banner-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+.banner-img {
+    width: 100%;
+    display: block;
+    height: auto;
 }
 
 /*
@@ -192,96 +119,70 @@ iframe {
 	padding: 0.8em 0 0 0;
 }
 
-	/* Banner */
-	#banner h1 {
-		font-size: 3.571em;
-		line-height: 1.0;
-		margin-bottom: .3em;
-	}
+#banner h1 {
+    font-size: 3.571em;
+    line-height: 1.0;
+    margin-bottom: .2em;
+}
 
-	#banner h1 a:link, #banner h1 a:visited {
-		color: #000305;
-		display: block;
-		font-weight: bold;
-		margin: 0 0 0 .2em;
-		text-decoration: none;
-	}
-	#banner h1 a:hover, #banner h1 a:active {
-		background: none;
-		color: #C74350;
-		text-shadow: none;
-	}
+#banner h1 a:link, #banner h1 a:visited {
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    margin: 0 0 0 .2em;
+    text-decoration: none;
+}
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #C74350;
+    text-shadow: none;
+}
 
-	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
-
-	/* Main Nav */
-	#banner nav {
-		background: #000305;
-		font-size: 1.143em;
-		overflow: auto;
-		line-height: 30px;
-		margin: 0 auto 2em auto;
-		padding: 0;
-		text-align: center;
-		max-width: 800px;
-
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-	}
-
-	#banner nav ul {list-style: none; margin: 0 auto; max-width: 800px;}
-	#banner nav li {float: left; display: inline; margin: 0;}
-
-	#banner nav a:link, #banner nav a:visited {
-		color: #fff;
-		display: inline-block;
-		height: 30px;
-		padding: 5px 1.5em;
-		text-decoration: none;
-	}
-	#banner nav a:hover, #banner nav a:active,
-	#banner nav .active a:link, #banner nav .active a:visited {
-		background: #C74451;
-		color: #fff;
-		text-shadow: none !important;
-	}
-
-	#banner nav li:first-child a {
-		border-top-left-radius: 5px;
-		-moz-border-radius-topleft: 5px;
-		-webkit-border-top-left-radius: 5px;
-
-		border-bottom-left-radius: 5px;
-		-moz-border-radius-bottomleft: 5px;
-		-webkit-border-bottom-left-radius: 5px;
-	}
+.tagline {
+    font-size: 1.3em;
+    color: #555;
+    margin: 0 0 1em 0;
+}
 
 /*
-	Featured
+	Install Buttons
 *****************/
-#featured {
-	background: #fff;
-	margin-bottom: 2em;
-	overflow: hidden;
-	padding: 20px;
-	max-width: 760px;
-
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+.install-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
 }
 
-#featured figure {
-	border: 2px solid #eee;
-	float: right;
-	margin: 0.786em 2em 0 5em;
-	max-width: 248px;
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #5865F2;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none !important;
+    font-size: 1.05em;
+    font-weight: 600;
+    height: 40px;
+    box-sizing: border-box;
+    transition: background 0.2s;
 }
-#featured figure img {display: block; float: right;}
+
+.discord-btn:link, .discord-btn:visited {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.discord-btn:hover, .discord-btn:active {
+    background: #4752C4 !important;
+    color: #fff !important;
+    text-shadow: none !important;
+}
 
 /*
-	Body
+	Content Sections
 *****************/
 #content {
 	background: #fff;
@@ -289,9 +190,143 @@ iframe {
 	overflow: hidden;
 	padding: 20px 20px;
 	max-width: 760px;
-
 	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
 }
 
+/*
+	Screenshot
+*****************/
+.screenshot-section {
+    text-align: center;
+}
+
+.screenshot {
+    border-radius: 8px;
+    margin-top: 1em;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+/*
+	Features Grid
+*****************/
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2em;
+    margin: 1em 0;
+}
+
+.feature {
+    background: #f7f9fb;
+    border-radius: 8px;
+    padding: 1em 1.2em;
+}
+
+.feature h3 {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.feature p {
+    margin: 0.3em 0;
+}
+
+.feature code {
+    background: #e8edf2;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+.highlights {
+    margin-top: 1.5em;
+    padding: 1em 1.2em;
+    background: #f0f7ff;
+    border-radius: 8px;
+    border-left: 4px solid #028EC4;
+}
+
+.highlights ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.highlights li {
+    margin: 0.6em 0;
+    padding-left: 0;
+}
+
+.highlights li::before {
+    content: "✓ ";
+    color: #028EC4;
+    font-weight: bold;
+}
+
+/*
+	Pricing
+*****************/
+.pricing-section {
+    text-align: center;
+}
+
+.price-free {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #028EC4;
+}
+
+.price-paid {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/*
+	Footer
+*****************/
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    color: #555;
+}
+
+footer p {
+    margin: 0.3em 0;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    margin-bottom: 0.5em;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    background: none;
+    color: #028EC4;
+    text-shadow: none;
+}
+
+.footer-links .sep {
+    margin: 0 0.5em;
+    color: #aaa;
+}
+
+/*
+	Responsive
+*****************/
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .install-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
